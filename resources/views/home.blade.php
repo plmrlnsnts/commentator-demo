@@ -25,7 +25,7 @@
     <div id="app">
         <div class="bg-yellow-500">
             <div class="max-w-screen-lg mx-auto px-4">
-                <div class="h-16 flex items-center justify-beeween">
+                <div class="h-16 flex items-center justify-between">
                     <a href="/" class="text-black text-lg font-medium">Laravel Commentator</a>
                     <div>
                         <a href="https://github.com/plmrlnsnts/commentator" class="font-medium inline-flex items-center">

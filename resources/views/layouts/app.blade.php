@@ -15,8 +15,9 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <!-- Open Graph -->
-    <meta property="og:title" content="Laravel Commentator" />
     <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laravel Commentator" />
+    <meta property="og:description" content="A Laravel package for adding comments to your model." />
     <meta property="og:url" content="https://commentator-demo.herokuapp.com/" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=600&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9" />
 </head>

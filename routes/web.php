@@ -19,7 +19,7 @@ use JD\Cloudder\Facades\Cloudder;
 */
 
 Route::get('/', function () {
-    Auth::login(User::inRandomOrder()->first());
+    Auth::login(User::find(rand(1, 50)));
 
     return view('home', ['commentable' => Post::first()]);
 });

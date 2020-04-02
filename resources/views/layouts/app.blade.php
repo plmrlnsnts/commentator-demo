@@ -3,19 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <meta name="description" content="A Laravel package for adding comments to your model.">
+    <title>Laravel Commentator</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -26,15 +22,15 @@
                 <div class="h-16 flex items-center justify-between">
                     <a href="/" class="text-lg font-medium">Laravel Commentator</a>
                     <div>
-                        <a href="https://github.com/plmrlnsnts/commentator" target="_blank" rel="noreferrer noopener" class="font-medium inline-flex items-center">
+                        <a href="https://github.com/plmrlnsnts/commentator" class="font-medium inline-flex items-center">
                             <span class="mr-2">Github</span>
                             <svg class="w-5 h-5 text-gray-800 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41zM17 14a1 1 0 0 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h5a1 1 0 0 1 0 2H5v12h12v-5z"/></svg>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="py-24 text-center">
-                <h1 class="w-full max-w-xl mx-auto text-5xl font-bold text-black tracking-tight leading-none">Hassle free comment system for your next Laravel project.</h1>
+            <div class="px-4 py-24 text-center">
+                <h1 class="w-full max-w-2xl mx-auto text-5xl font-bold text-black tracking-tighter leading-none">Hassle free comment system for your Laravel projects.</h1>
                 <pre class="bg-black inline-block text-white rounded-lg p-6 font-medium mt-16"><code>composer require plmrlnsnts/commentator</code></pre>
             </div>
         </div>
@@ -45,7 +41,7 @@
             @yield('content')
         </main>
         <footer class="bg-gray-100 p-4">
-            <p class="text-center">Made with <span class="text-red-500">♥️</span> by plrmlnsnts.</p>
+            <p class="text-center">Made with <span class="text-red-500">♥️</span> by <a href="https://github.com/plmrlnsnts">plrmlnsnts</a>.</p>
         </footer>
     </div>
 </body>

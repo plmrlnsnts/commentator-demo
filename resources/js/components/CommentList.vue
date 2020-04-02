@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import _ from 'lodash'
 import axios from 'axios'
 import CommentListItem from './CommentListItem'
 import CommentCreateForm from './CommentCreateForm'
@@ -68,11 +69,11 @@ export default {
     mounted () {
         this.fetch()
 
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', _.debounce(() => {
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 if (this.hasNext) this.fetch()
             }
-        });
+        }, 500));
     },
 
     methods: {

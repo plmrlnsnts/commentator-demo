@@ -2,8 +2,10 @@
 
 use App\Post;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use JD\Cloudder\Facades\Cloudder;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +22,14 @@ Route::get('/', function () {
     Auth::login(User::inRandomOrder()->first());
 
     return view('home', ['commentable' => Post::first()]);
+});
+
+Route::post('/upload', function (Request $request) {
+    $request->validate(['file' => ['required', 'image']]);
+
+    Cloudder::upload($request->file('file')->getRealPath(), null);
+
+    return response()->json([
+        'path' => Cloudder::getResult(Cloudder::getPublicId())['secure_url']
+    ]);
 });

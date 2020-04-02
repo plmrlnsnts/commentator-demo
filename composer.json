@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "fzaninotto/faker": "^1.9.1",
+        "jrm2k6/cloudder": "^0.6.0",
         "plmrlnsnts/commentator": "dev-master"
     },
     "require-dev": {

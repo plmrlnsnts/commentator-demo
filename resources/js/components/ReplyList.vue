@@ -23,7 +23,8 @@
                 enter-class="opacity-0"
                 enter-to-class="opacity-100"
                 leave-class="opacity-100"
-                leave-to-class="opacity-0">
+                leave-to-class="opacity-0"
+            >
                 <reply-list-item
                     v-for="(reply, i) in replies"
                     :key="reply.id"
@@ -43,6 +44,17 @@
                 Show more replies...
             </a>
         </div>
+
+        <transition
+            enter-active-class="transition duration-300 ease-in-out"
+            leave-active-class="transition duration-300 ease-in-out"
+            enter-class="opacity-0"
+            enter-to-class="opacity-100"
+            leave-class="opacity-100"
+            leave-to-class="opacity-0"
+        >
+            <p v-show="state === 'loading'" class="font-medium mt-4">Loading...</p>
+        </transition>
     </div>
 </template>
 

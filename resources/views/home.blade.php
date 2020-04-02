@@ -7,7 +7,7 @@
             @csrf
             <input type="hidden" name="email" value="{{ $user->email }}">
             <input type="hidden" name="password" value="password">
-            <div class="mb-8"><img src="{{ asset('placeholder.svg') }}" class="inline-block w-32" alt=""></div>
+            <div class="mb-8"><img src="{{ asset('placeholder.svg') }}" class="inline-block w-64" alt=""></div>
             <button type="submit" class="border rounded font-medium px-4 py-3 focus:outline-none">Login to view discussions</button>
         </form>
     @else

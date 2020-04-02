@@ -31,7 +31,7 @@
             </div>
             <div class="px-4 py-24 text-center">
                 <h1 class="w-full max-w-2xl mx-auto text-5xl font-bold text-black tracking-tighter leading-none">Hassle free comment system for your Laravel projects.</h1>
-                <pre class="bg-black inline-block text-white rounded-lg p-6 font-medium overflow-x-auto mt-16"><code>composer require plmrlnsnts/commentator</code></pre>
+                <div class="bg-black inline-block text-white rounded-lg p-6 font-medium mt-16"><code>composer require plmrlnsnts/commentator</code></div>
             </div>
         </div>
         <svg class="text-yellow-500 w-full h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">

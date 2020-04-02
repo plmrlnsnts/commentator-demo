@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 py-24 text-center">
+            <div class="px-4 py-24 md:text-center">
                 <h1 class="w-full max-w-2xl mx-auto text-5xl font-bold text-black tracking-tighter leading-none">Just another comment package for your Laravel projects.</h1>
                 <div class="bg-black inline-block text-white rounded-lg p-6 font-medium mt-16"><code>composer require plmrlnsnts/commentator</code></div>
             </div>

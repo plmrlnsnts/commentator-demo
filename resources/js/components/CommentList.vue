@@ -70,7 +70,7 @@ export default {
         this.fetch()
 
         window.addEventListener('scroll', _.debounce(() => {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 100) {
                 if (this.hasNext) this.fetch()
             }
         }, 500));

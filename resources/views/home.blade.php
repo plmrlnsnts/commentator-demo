@@ -20,6 +20,7 @@
     <meta property="og:description" content="A Laravel package for adding comments to your model." />
     <meta property="og:url" content="https://commentator-demo.herokuapp.com/" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=600&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9" />
+    <meta name="theme-color" content="#ECC94B">
 </head>
 <body class="font-body text-gray-100 bg-black antialiased">
     <div id="app">

@@ -18,10 +18,13 @@ use JD\Cloudder\Facades\Cloudder;
 |
 */
 
-Route::get('/', function () {
-    Auth::loginUsingId(rand(1, 50));
+Auth::routes(['register' => false]);
 
-    return view('home', ['commentable' => Post::first()]);
+Route::get('/', function () {
+    return view('home', [
+        'user' => auth()->user() ?? User::find(rand(1, 50)),
+        'commentable' => Post::first()
+    ]);
 });
 
 Route::post('/upload', function (Request $request) {

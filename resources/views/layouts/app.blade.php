@@ -31,13 +31,13 @@
             </div>
             <div class="px-4 py-24 text-center">
                 <h1 class="w-full max-w-2xl mx-auto text-5xl font-bold text-black tracking-tighter leading-none">Hassle free comment system for your Laravel projects.</h1>
-                <pre class="bg-black inline-block text-white rounded-lg p-6 font-medium mt-16"><code>composer require plmrlnsnts/commentator</code></pre>
+                <pre class="bg-black inline-block text-white rounded-lg p-6 font-medium overflow-x-auto mt-16"><code>composer require plmrlnsnts/commentator</code></pre>
             </div>
         </div>
         <svg class="text-yellow-500 w-full h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path class="fill-current" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,250.7C384,277,480,267,576,240C672,213,768,171,864,176C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
-        <main class="max-w-screen-lg mx-auto px-4 py-10">
+        <main class="max-w-screen-lg mx-auto py-10">
             @yield('content')
         </main>
         <footer class="bg-gray-100 p-4">

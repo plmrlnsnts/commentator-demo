@@ -18,14 +18,14 @@
                 <img v-if="reply.media" :src="reply.media" class="max-w-full rounded border border-gray-200 mb-2" style="max-height: 400px;">
                 <div v-html="reply.html"></div>
                 <div class="text-sm mt-2">
-                    <button @click="state = 'replying'" class="text-gray-600 hover:text-gray-800 focus:outline-none">Reply</button>
+                    <button @click="state = 'replying'" class="text-gray-600 hover:text-gray-400 focus:outline-none">Reply</button>
                     <template v-if="reply.can.update">
                         <span class="text-gray-600 mx-1">•</span>
-                        <button @click="state = 'editing'" class="text-gray-600 hover:text-gray-800 focus:outline-none">Edit</button>
+                        <button @click="state = 'editing'" class="text-gray-600 hover:text-gray-400 focus:outline-none">Edit</button>
                     </template>
                     <template v-if="reply.can.delete">
                         <span class="text-gray-600 mx-1">•</span>
-                        <button @click="deleted" class="text-gray-600 hover:text-gray-800 focus:outline-none">Delete</button>
+                        <button @click="deleted" class="text-gray-600 hover:text-gray-400 focus:outline-none">Delete</button>
                     </template>
                 </div>
             </div>

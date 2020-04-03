@@ -58,7 +58,7 @@
             @endguest
         </main>
         <footer class="p-4">
-            <p class="text-center">Made with <span class="text-red-500">♥️</span> by <a href="https://github.com/plmrlnsnts">plrmlnsnts</a>.</p>
+            <p class="text-center">Made with <span class="text-red-500">♥️</span> by <a href="https://github.com/plmrlnsnts">plmrlnsnts</a>.</p>
         </footer>
     </div>
 </body>

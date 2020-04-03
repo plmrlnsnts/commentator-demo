@@ -8,16 +8,16 @@ window.dayjs.updateLocale('en', {
         future: "in %s",
         past: "%s ago",
         s: 'just now',
-        m: "a minute",
-        mm: "%d minutes",
-        h: "an hour",
-        hh: "%d hours",
-        d: "a day",
-        dd: "%d days",
-        M: "a month",
-        MM: "%d months",
-        y: "a year",
-        yy: "%d years"
+        m: "1m",
+        mm: "%dm",
+        h: "1h",
+        hh: "%dh",
+        d: "1d",
+        dd: "%dd",
+        M: "1mo",
+        MM: "%dmo",
+        y: "1y",
+        yy: "%dy"
     }
 })
 

@@ -1,5 +1,6 @@
 <template>
     <comment
+        :level="2"
         :comment="reply"
         :reply-to="comment"
         @updated="$emit('updated', $event)"

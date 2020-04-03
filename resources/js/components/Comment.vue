@@ -1,6 +1,10 @@
 <template>
     <div class="flex px-6 py-4">
-        <img class="h-10 w-10 rounded-full" :src="comment.author.avatar" alt="">
+        <img
+            :class="(level === 1 ? 'w-10 h-10' : 'w-6 h-6') + ' rounded'"
+            :src="comment.author.avatar"
+            :alt="comment.author.name"
+        >
         <div class="flex-1 ml-4">
             <div class="text-sm leading-none mb-2">
                 <span class="font-semibold">{{ `@${comment.author.name}` }}</span>
@@ -58,7 +62,12 @@ export default {
         replyTo: {
             type: Object,
             required: true
-        }
+        },
+
+        level: {
+            type: Number,
+            default: 1,
+        },
     },
 
     components: {

@@ -34,7 +34,7 @@
                     @replied="prepend($event)"
                     @updated="replies.splice(i, 1, $event)"
                     @deleted="replies.splice(i, 1); total--;"
-                    />
+                />
             </transition-group>
 
             <a

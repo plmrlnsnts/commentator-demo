@@ -43,12 +43,34 @@
         </svg>
         <main class="max-w-screen-lg mx-auto py-10">
             @guest
-                <form class="text-center py-24" action="{{ route('login') }}" method="POST">
+                <form class="max-w-sm mx-auto py-6" action="{{ route('login') }}" method="POST">
                     @csrf
-                    <input type="hidden" name="email" value="{{ $user->email }}">
-                    <input type="hidden" name="password" value="password">
-                    <div class="mb-8"><img src="{{ asset('placeholder.svg') }}" class="inline-block w-64" alt=""></div>
-                    <button type="submit" class="border rounded font-medium px-4 py-3 focus:outline-none">Login to view discussions</button>
+                    <div class="mb-8">
+                        <label for="email" class="text-sm font-medium inline-block mb-2">Email Address</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Email Address"
+                            value="{{ old('email', $user->email) }}"
+                            class="block w-full appearance-none leading-tight px-4 py-3 bg-gray-900 rounded-lg focus:outline-none focus:shadow-outline"
+                            autocomplete="email"
+                            autofocus
+                        >
+                    </div>
+                    <div class="mb-8">
+                        <label for="email" class="text-sm font-medium inline-block mb-2">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="******"
+                            value="{{ old('password', 'password') }}"
+                            class="block w-full appearance-none leading-tight px-4 py-3 bg-gray-900 rounded-lg focus:outline-none focus:shadow-outline"
+                            autocomplete="current-password"
+                        >
+                    </div>
+                    <button type="submit" class="w-full border border-gray-700 rounded-lg font-medium px-4 py-3 focus:outline-none">Login to view discussions</button>
                 </form>
             @else
                 <comment-list :commentable='@json($commentable)' :user='@json(Auth::user())'></comment-list>

@@ -19,7 +19,7 @@
                 <comment-edit-form @saved="updated" @cancelled="state = 'idle'" :comment="comment"></comment-edit-form>
             </div>
             <div v-if="state !== 'editing'">
-                 <img v-if="comment.media" :src="comment.media" class="max-w-full rounded mb-2" style="max-height: 400px;">
+                <img v-if="comment.media" :src="comment.media" class="max-w-full rounded mb-2" style="max-height: 400px;">
                 <div v-html="comment.html"></div>
                 <div class="text-sm mt-2">
                     <button @click="state = 'replying'" class="text-gray-600 hover:text-gray-400 focus:outline-none">Reply</button>

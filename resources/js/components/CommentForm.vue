@@ -30,12 +30,12 @@
             </upload>
             <div>
                 <button
-                    class="px-3 py-2 rounded text-sm font-medium focus:outline-none"
+                    class="px-3 py-2 rounded text-gray-400 text-sm font-medium focus:outline-none"
                     @click.prevent="$emit('cancelled')"
                     type="button"
                 >Cancel</button>
                 <button
-                    class="px-3 py-2 rounded bg-gray-800 text-white text-sm font-medium focus:outline-none focus:shadow-outline"
+                    class="px-3 py-2 rounded bg-black text-white text-sm font-medium focus:outline-none focus:shadow-outline"
                     :class="{ 'opacity-50': disabled }"
                     :disabled="disabled"
                     type="submit"

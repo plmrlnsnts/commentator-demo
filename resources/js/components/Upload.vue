@@ -5,7 +5,8 @@
             type="file"
             class="hidden"
             accept="image/*"
-            @change="upload">
+            @change="upload"
+        />
 
         <slot v-bind="{ toggle }"></slot>
     </span>

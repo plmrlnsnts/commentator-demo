@@ -34,7 +34,8 @@
                     @saved="replied($event)"
                     @cancelled="state = 'idle'"
                     :mention="reply.author.name"
-                    :comment="comment" />
+                    :comment="comment"
+                />
             </div>
         </div>
     </div>

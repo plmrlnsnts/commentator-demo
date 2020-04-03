@@ -3,7 +3,8 @@
         <comment-create-form
             v-if="user"
             v-bind="{ commentable, user }"
-            @saved="comments.unshift($event)" />
+            @saved="comments.unshift($event)"
+        />
 
         <transition-group
             tag="div"
@@ -12,14 +13,16 @@
             enter-class="opacity-0"
             enter-to-class="opacity-100"
             leave-class="opacity-100"
-            leave-to-class="opacity-0">
+            leave-to-class="opacity-0"
+        >
             <comment-list-item
                 v-for="(comment, i) in comments"
                 :key="comment.id"
                 :comment="comment"
                 :id="`comment-${comment.id}`"
                 @updated="comments.splice(i, 1, $event)"
-                @deleted="comments.splice(i, 1)" />
+                @deleted="comments.splice(i, 1)"
+            />
         </transition-group>
 
         <transition

@@ -12,13 +12,15 @@
             v-model="form.body"
             :placeholder="`Reply to ${mention}`"
             class="block w-full bg-transparent rounded appearance-none leading-tight px-4 py-3 resize-none focus:outline-none"
-            rows="4"></textarea>
+            rows="4"
+        ></textarea>
 
         <div class="flex items-end justify-between px-4 py-3">
             <upload
                 v-slot="{ toggle }"
                 @uploading="uploading = true"
-                @uploaded="form.media = $event; uploading = false">
+                @uploaded="form.media = $event; uploading = false"
+            >
                 <button @click.prevent="toggle" class="text-gray-400 hover:text-gray-100 focus:outline-none">
                     <span v-if="uploading" class="text-sm text-gray-400">Uploading ...</span>
                     <svg v-if="! uploading" class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>

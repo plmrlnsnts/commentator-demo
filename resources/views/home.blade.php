@@ -41,7 +41,7 @@
         <svg class="text-yellow-500 w-full h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path class="fill-current" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,250.7C384,277,480,267,576,240C672,213,768,171,864,176C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
-        <main class="max-w-screen-lg mx-auto py-10">
+        <main class="max-w-screen-sm mx-auto py-10">
             @guest
                 <form class="max-w-sm mx-auto py-6" action="{{ route('login') }}" method="POST">
                     @csrf

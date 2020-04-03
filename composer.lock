@@ -1740,12 +1740,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/plmrlnsnts/commentator.git",
-                "reference": "14fbf51e97fa468ec0d62bcee0837ade9464b1ed"
+                "reference": "767cf24f21b0ba00e97e96b1949e13b1e10c4694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/plmrlnsnts/commentator/zipball/14fbf51e97fa468ec0d62bcee0837ade9464b1ed",
-                "reference": "14fbf51e97fa468ec0d62bcee0837ade9464b1ed",
+                "url": "https://api.github.com/repos/plmrlnsnts/commentator/zipball/767cf24f21b0ba00e97e96b1949e13b1e10c4694",
+                "reference": "767cf24f21b0ba00e97e96b1949e13b1e10c4694",
                 "shasum": ""
             },
             "require": {
@@ -1791,7 +1791,7 @@
                 "commentator",
                 "laravel"
             ],
-            "time": "2020-04-02T14:22:40+00:00"
+            "time": "2020-04-03T09:47:15+00:00"
         },
         {
             "name": "psr/container",

@@ -8,8 +8,4 @@ use Plmrlnsnts\Commentator\HasComments;
 class Post extends Model
 {
     use HasComments;
-
-    protected $appends = [
-        'commentableKey'
-    ];
 }

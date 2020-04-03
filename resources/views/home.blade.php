@@ -43,7 +43,7 @@
         </svg>
         <main class="max-w-screen-sm mx-auto py-10">
             @guest
-                <form class="max-w-sm mx-auto py-6" action="{{ route('login') }}" method="POST">
+                <form class="max-w-sm mx-auto px-6 py-6" action="{{ route('login') }}" method="POST">
                     @csrf
                     <div class="mb-8">
                         <label for="email" class="text-sm font-medium inline-block mb-2">Email Address</label>

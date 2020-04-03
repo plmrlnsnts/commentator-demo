@@ -73,10 +73,22 @@ export default {
         this.fetch()
 
         window.addEventListener('scroll', _.debounce(() => {
-            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 100) {
-                if (this.hasNext) this.fetch()
+            if (
+                (window.innerHeight + window.pageYOffset) <
+                (document.body.offsetHeight - (document.body.offsetHeight / 3))) {
+               return
             }
-        }, 500));
+
+            if (this.state === 'loading') {
+                return
+            }
+
+            if (! this.hasNext) {
+                return
+            }
+
+            this.fetch()
+        }, 300));
     },
 
     methods: {

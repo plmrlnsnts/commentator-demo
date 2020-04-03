@@ -1,5 +1,5 @@
 <template>
-    <div class="flex px-6 py-4">
+    <div :class="(level === 1 ? 'px-6 py-4' : 'py-4') + ' flex'">
         <img
             :class="(level === 1 ? 'w-10 h-10' : 'w-6 h-6') + ' rounded'"
             :src="comment.author.avatar"

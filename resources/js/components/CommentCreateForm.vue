@@ -1,6 +1,6 @@
 <template>
     <div class="flex p-6">
-        <img class="h-10 w-10 rounded-full" :src="user.avatar" alt="">
+        <img class="h-10 w-10 rounded" :src="user.avatar" alt="">
         <div class="flex-1 ml-4">
             <comment-form ref="commentForm" @submitted="submitted" />
         </div>
